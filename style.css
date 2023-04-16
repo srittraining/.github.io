@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Comic Neue', cursive;
+  scroll-behavior: smooth;
+}
+
+.container__head {
+  font-family: 'Comic Neue', cursive;
+  background-color: #141414;
+  color: #ffffff;
+  padding: 1em;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__name {
+  display: flex;
+  font-size: 2.8em;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand__name2 {
+  color: blueviolet;
+}
+
+.navbar__links {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.7em;
+  width: 100%;
+}
+
+.navbar__links a:hover {
+  color: #cb76ff;
+}
+
+.navbar__links.active {
+  display: flex;
+}
+
+.navbar__links li {
+  margin-right: 3rem;
+  text-align: right;
+  padding: 1.5rem;
+}
+
+.navbar__links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn__menu,
+.btn__cart {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #ffffff;
+}
+
+.btn__menu:hover,
+.btn__cart:hover {
+  color: #cb76ff;
+}
+
+.navbar__icons {
+  display: flex;
+  padding: 2em;
+}
+/* Brand Tagline */
+.brand__tagline {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand__tagline1 {
+  color: #cb76ff;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.brand__tagline2 {
+  color: #fff;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.brand__item-pic {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.keyb-pic {
+  width: 100%;
+  padding: 0;
+}
+
+/* About Us */
+.aboutUs__head {
+  background-image: url(https://rare-gallery.com/uploads/posts/966406-nostalgia-Commodore-64-Commodore-GameBoy-consoles.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.aboutUs__head h1 {
+  text-align: center;
+  padding: 3em;
+}
+
+.aboutUs__body h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.aboutUs__section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs__section-title h1 {
+  padding: 0.2em;
+}
+
+#story {
+  color: #8950ac;
+}
+
+.aboutUs__section-body {
+  margin: auto;
+  margin-bottom: 3rem;
+  width: 80%;
+  text-align: center;
+}
+
+/* Footer */
+
+.container__foot {
+  background-color: #141414;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social-icons {
+  padding: 1em;
+  text-align: center;
+  color: #cb76ff;
+  font-size: 1.3em;
+}
+
+.footer__links {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+.footer__links li {
+  padding: 0.3rem;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  padding: 1.5em;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  /* navbar */
+  .navbar,
+  .brand__name {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar__links {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.69em;
+    flex-direction: row;
+  }
+
+  .navbar__links li {
+    margin: 0;
+  }
+
+  .navbar__links li a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 0.2rem;
+  }
+
+  .btn__menu{
+    position: absolute;
+    top: 2.9rem;
+    right: 1rem;
+  }
+
+  li,
+  .fa-cart-shopping {
+    padding: 0 2rem;
+  }
+
+  .fa-bars {
+    visibility: hidden;
+  }
+
+  /* Brand Tagline */
+  .brand__tagline {
+    background-color: #141414;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tagline {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2em;
+  }
+
+  .brand__tagline1 {
+    color: #cb76ff;
+    padding-left: 1em;
+    margin: 0;
+    font-size: larger;
+  }
+
+  .brand__tagline2 {
+    color: #fff;
+    padding-left: 1em;
+    margin: 0;
+  }
+
+  .brand__item-pic {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .keyb-pic {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    object-fit: cover;
+  }
+
+  /* About Us */
+  .aboutUs__head h1 {
+    text-align: center;
+    padding: 5em;
+    font-size: 2.5em;
+  }
+
+  .aboutUs__body {
+    display: flex;
+    margin: 3em;
+  }
+
+  .aboutUs__body h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .aboutUs__section-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 40%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutUs__section-title h1 {
+    padding: 0.2em;
+  }
+
+  .aboutUs__section-body {
+    flex: 1 1 60%;
+    width: 70%;
+    text-align: left;
+    margin: 0;
+  }
+  
+  #story {
+    color: #8950ac;
+  }
+}
+
+
+
+
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 22px;
+}
+.card-description p {
+  font-size: 15px;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}
+.features img {
+  width: 100px;
+}
+.features h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.features p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+.wrapper{
+  text-align:center;
+  margin:50px auto;
+}
+
+.tabs{
+  margin-top:50px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#fff;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
+.tabs a{
+  text-decoration:none;
+  color: #777;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+}
+
+.tabs a.active{
+  color:#fff;
+}
+
+.tabs a i{
+  margin-right:5px;
+}
+
+.tabs .selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;}
+  .tabs .active{
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+
+  background: #05abe0;
+  background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+  background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Mono);
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+
+.window {
+  width: 70%;
+  background: GhostWhite;
+  border-radius: 0.3rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.window .window-header {
+  height: 37px;
+  background: Gainsboro;
+  position: relative;
+}
+.window .window-header .action-buttons {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background: Crimson;
+  border-radius: 50%;
+  box-shadow: 15px 0 0 Orange,
+				30px 0 0 LimeGreen;
+}
+.window .window-header .language {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  height: 21px;
+  padding: 0 1em;
+  text-align: right;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  font-family: 'Comic Neue', cursive;
+  color: DimGrey;
+}
+.window .window-header .language:before {
+  content: 'asd';
+}
+.window .window-header .language:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.window .window-body {
+  position: relative;
+  height: 300px;
+}
+.window .window-body .code-input,
+.window .window-body .code-output {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  font-family: 'Comic Neue', cursive;
+  font-size: 0.8rem;
+  background: transparent;
+  white-space: pre-wrap;
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+.window .window-body .code-input {
+  opacity: 0.7;
+  margin: 0;
+  color: rgb(15, 15, 15);
+  font-size: x-large;
+  resize: none;
+}
+
+
+
+
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
